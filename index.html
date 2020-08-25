@@ -9,22 +9,28 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="main.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="lightbox.css" rel="stylesheet" type="text/css">
+  <script src="lightbox.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <!-- Header -->
   <div class="header">
-    <h1>Responsive Image Grid</h1>
+    <h1></h1>
     <p></p>
   </div>
 
   <!-- Photo Grid -->
   <div class="row">
     <div class="column">
-      <img src="images/DSCF0078.jpg" style="width:100%">
-      <img src="images/DSCF0165.JPG" style="width:100%">
-      <img src="images/DSCF0182.JPG" style="width:100%">
-      <img src="images/DSCF0193.JPG" style="width:100%">
+
+      <img src="images/DSCF0078.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" style="width:100%">
+      <img src="images/DSCF0165.JPG" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" style="width:100%">
+      <img src="images/DSCF0182.JPG" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" style="width:100%">
+      <img src="images/DSCF0193.JPG" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" style="width:100%">
       <img src="images/DSCF0212.JPG" style="width:100%">
       <img src="images/DSCF0224.JPG" style="width:100%">
       <img src="images/DSCF0580.jpg" style="width:100%">
@@ -56,7 +62,54 @@
       <img src="images/DSCF0224.JPG" style="width:100%">
       <img src="images/DSCF0580.jpg" style="width:100%">
     </div>
+
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="images/DSCF0078.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="images/DSCF0165.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="images/DSCF0182.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="images/DSCF0193.jpg" style="width:100%">
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+  
+      <div class="column">
+        <img class="demo cursor" src="images/DSCF0078.jpg" style="width:100%" onclick="currentSlide(1)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/DSCF0165.jpg" style="width:100%" onclick="currentSlide(2)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/DSCF0182.jpg" style="width:100%" onclick="currentSlide(3)" >
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/DSCF0193.jpg" style="width:100%" onclick="currentSlide(4)" >
+      </div>
+    </div>
   </div>
+
 </body>
 
 </html>
