@@ -53,6 +53,9 @@
      flex: 100%;
      max-width: 100%;
    }
+   .row {
+    padding: 0px;
+   }
  }
 
  a {
