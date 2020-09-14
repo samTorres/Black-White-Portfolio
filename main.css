@@ -148,7 +148,7 @@ body {
   background-color: #fefefe;
   margin: auto;
   padding: 0;
-  width: 90%;
+  width: 35%;
   max-width: 1200px;
 }
 
@@ -182,10 +182,10 @@ body {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 540px;
   width: auto;
   padding: 16px;
-  margin-top: -50px;
+  margin-top: -250px;
   color: white;
   font-weight: bold;
   font-size: 20px;
@@ -241,5 +241,5 @@ img.hover-shadow {
 }
 
 .hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
