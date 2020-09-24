@@ -2,14 +2,18 @@
    box-sizing: border-box;
  }
 
- body {
+ .body {
    margin: 0;
    font-family: Arial;
  }
 
  .header {
-   text-align: center;
-   padding: 32px;
+  text-align: left;
+  padding: 32px;
+  padding-left: 10%;
+  font-size: 10px;
+  
+      
  }
 
  .row {
