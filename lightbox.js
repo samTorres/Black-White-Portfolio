@@ -35,4 +35,16 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
- 
+
+var element = document.getElementById('mySlides');
+window.mySwipe = new Swipe(element, {
+  startSlide: 0,
+  auto: 3000,
+  draggable: false,
+  autoRestart: false,
+  continuous: true,
+  disableScroll: true,
+  stopPropagation: true,
+  callback: function(index, element) {},
+  transitionEnd: function(index, element) {}
+});
